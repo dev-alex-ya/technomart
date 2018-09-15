@@ -1,0 +1,66 @@
+:root{
+	--basecolor: #293449;
+}
+
+
+.block-status-panel {
+    background-color: var(--basecolor);
+}
+
+.block-status-panel .navbar {
+	padding: 0 1rem;
+	outline-style: none;
+}
+
+.navbar-brand {
+	text-transform: uppercase;
+	background-color: #ee3643;
+	padding: 12px 55px;
+	font-size: 24pt;
+	line-height: 24pt;
+}
+
+.block-status-panel .nav-item .nav-link {
+	
+	font-size: 17pt;
+	line-height: auto;
+	color: #ffffff;
+}
+
+.block-status-panel .form-control {
+	background-color: var(--basecolor);
+	color: #fff;
+	font-size: 17pt;
+	line-height: auto;
+}
+
+.block-status-panel .form-control::placeholder {
+	color: #fff;
+}
+
+.block-contact-authority {
+	background-color: #f1f5f7;
+}
+.block-contact-authority .block-topmenu {
+	background-color: #32425c;
+}
+.block-title h1 {
+	font-size: 16pt;
+	line-height: 23pt;
+	color: #ee3643;
+}
+.block-contact-authority .phone {
+	border: 3px solid #fff;
+	color: #e93e3f;
+	font-size: 21pt;
+	line-height: 21pt;
+	padding-left: 70px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.block-contact-authority .address {
+	font-size: 14pt;
+	line-height: 24pt;
+	padding: 5px;
+	color: #32425c;
+}
