@@ -3,16 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
+    <nav class="block-status-panel  navbar navbar-expand-lg navbar-dark" id="block-status-panel">
+        <div class="container">
+            <div class="navbar-brand">Техномарт</div>
+            <form action="" class="form-inline my-2 my-lg-0">
+                <input style="border:none;outline:none;" type="text" class="form-control mr-sm-2" placeholder="Поиск" area-label="Search">
+            </form>
+            <div class="navbar-header"></div>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Закладки: 0</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Корзина: 0</a>
+                </li>
+                <li class="nav-item  btn-success">
+                    <a class="nav-link" href="#">Оформить заказ</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header class="block-contact-authority">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="block-title col-md-4">
+                    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+                </div>
+                <div class="block-contacts col-md-4">
+                    <div class="phone">+38(044)555-05-55</div>
+                    <div class="address">г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)</div>
+                </div>
+                <div class="block-authority col-md-4">
+                <ul>
+				  <li class="btn">
+                      <a class="nav-link" href="#">Войти</a>
+                  </li>
+                  <li class="btn">
+                      <a class="nav-link" href="#">Регистрация</a>
+                  </li>
+				</ul>
+
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="block-topmenu  navbar-expand-lg navbar-dark ">
+                <ul class="navbar-nav justify-content-around navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Компания</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Новости</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Спецпредложения</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Доставка</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         
     </header>
-    <main>
+
+
+    <main class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+              <li class="breadcrumb-item"><a href="#">Инструмент</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Перфораторы</li>
+            </ol>
+        </nav>
+        
+        <div class="title"></div>
         
     </main>
-    <footer>
+    
         
+    <footer>
+        <div class="block-bottommenu"></div>
+        <div class="block-social"></div>
     </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>

@@ -64,3 +64,27 @@
 	padding: 5px;
 	color: #32425c;
 }
+
+.block-category {
+    display: grid;
+}
+
+.block-category .card {
+    margin: 10px;
+}
+
+.breadcrumb {
+    background-color: #fff;
+}
+
+.breadcrumb-item::before {
+    content: ">" !important;
+}
+
+.active + .breadcrumb-item::before {
+    content: "";    
+}
+
+.breadcrumb-item:first-of-type::before {
+    content: "" !important;    
+}
