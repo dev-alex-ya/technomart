@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css"> 
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/filter.css">
+    <link rel="stylesheet" href="css/radiobuttons.css">
+    <link rel="stylesheet" href="css/checkboxes.css">
 </head>
 <body>
     <nav class="block-status-panel  navbar navbar-expand-lg navbar-dark" id="block-status-panel">
@@ -93,7 +96,81 @@
             </ol>
         </nav>
         
-        <div class="title"></div>
+        <div class="main-title"><h2>Перфораторы</h2></div>
+
+        <div class="row">
+            <div class="block-filter">
+                <div class="section-name">Фильтр</div>
+                <form class="left filter clearfix" method="get" action="catalog.html">
+                    <div class="filter-section filter-range clearfix">
+                        <div class="section-name">Стоимость:</div>
+                        <div class="range ">
+                            <div class="range-controls">
+                                <div class="scale">
+                                    <div style="width: 70%;" class="bar"></div>
+                                </div>
+                                <div class="toggle min-toggle">
+
+                                </div>
+                                <div class="toggle max-toggle"></div>
+                            </div>
+                            <div class="price-controls">
+                                <label class="label-min">
+                                    от <input name="min-price" class="min-price" type="text" value="0">
+                                </label>
+                                <label class="label-max">
+                                    до <input name="max-price" class="max-price" type="text" value="15000">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkboxes-block">
+                        <p class="section-name">Производители:</p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="checkbox" id="checkbox1" class="checkbox" checked>
+                                <label for="checkbox1">Bosch</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox" id="checkbox2" class="checkbox">
+                                <label for="checkbox2">Интерскол</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox" id="checkbox3" class="checkbox" checked disabled>
+                                <label for="checkbox3">Makita</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox" id="checkbox4" class="checkbox" checked disabled>
+                                <label for="checkbox4">Dewalt</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="checkbox" id="checkbox5" class="checkbox" checked disabled>
+                                <label for="checkbox5">Hitachi</label>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <div class="radio-block">
+                        <p class="section-name">Питание:</p>
+                        <ul>
+                            <li>
+                                <input type="radio" class="radio" name="power" id="radio1" checked>
+                                <label for="radio1">Аккумуляторные</label>
+                            </li>
+                            <li>
+                                <input type="radio" class="radio" name="power" id="radio2">
+                                <label for="radio2">Сетевые</label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <input class="btn red" type="submit" value="Показать">
+                </form>
+            </div>
+            
+        </div>
+        
+
         
     </main>
     
