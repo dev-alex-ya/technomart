@@ -3,6 +3,7 @@
 }
 
 
+
 .block-status-panel {
     background-color: var(--basecolor);
 }
@@ -87,4 +88,13 @@
 
 .breadcrumb-item:first-of-type::before {
     content: "" !important;    
+}
+
+.main-title {
+	background-color: #f2f6f8;
+	padding: 30px;
+}
+
+.main-title h2 {
+	margin: 0;
 }

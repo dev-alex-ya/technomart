@@ -1,0 +1,49 @@
+.checkboxes-block ul{
+	padding: 0;
+}
+
+.checkboxes-block li {
+	list-style-type: none;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.checkboxes-block input {
+	text-indent: -9999px;
+	z-index: 12;
+	opacity: 0;
+}
+
+.checkboxes-block label {
+	padding-left: 60px;
+}
+
+.checkboxes-block label::before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	left: -2px;
+	background: url('../images/checkbox-sprite.png') no-repeat;
+	background-position: 0px -125px;
+}
+
+.checkbox:checked + label::before {
+	background-position: 0px -50px;
+}
+
+.checkbox:hover + label::before{
+	background-position: -0px -100px;
+}
+
+.checkbox:checked + label:hover::before {
+	background-position: 0px -25px;
+}
+
+.checkbox:checked:disabled + label::before {
+	background-position: 0px 0px;
+}
+
+.checkbox[disabled] + label::before {
+	background-position: 0px -75px;
+}

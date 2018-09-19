@@ -1,0 +1,49 @@
+.radio-block ul{
+	padding: 0;
+}
+
+.radio-block li {
+	list-style-type: none;
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.radio-block input {
+	text-indent: -9999px;
+	z-index: 12;
+	opacity: 0;
+}
+
+.radio-block label {
+	padding-left: 60px;
+}
+
+.radio-block label::before {
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	left: -1px;
+	background: url('../images/radio-buttons.png') no-repeat;
+	background-position: 0px -25px;
+}
+
+.radio:checked + label::before {
+	background-position: -25px -50px;
+}
+
+.radio:hover + label::before{
+	background-position: -25px -0px;
+}
+
+.radio:checked + label:hover::before {
+	background-position: 0px -50px;
+}
+
+.radio:checked:disabled + label::before {
+	background-position: -25px -25px;
+}
+
+.radio[disabled] + label::before {
+	background-position: 0px -0px;
+}
