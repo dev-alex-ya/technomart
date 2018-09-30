@@ -39,18 +39,19 @@
 	color: #fff;
 }
 
-.block-contact-authority {
+.header {
 	background-color: #f1f5f7;
 }
-.block-contact-authority .block-topmenu {
+.header__topmenu {
 	background-color: #32425c;
 }
-.block-title h1 {
+.header__title {
+	white-space: nowrap;
 	font-size: 16pt;
 	line-height: 23pt;
 	color: #ee3643;
 }
-.block-contact-authority .phone {
+.contacts__phone {
 	border: 3px solid #fff;
 	color: #e93e3f;
 	font-size: 21pt;
@@ -59,7 +60,7 @@
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
-.block-contact-authority .address {
+.contacts__address {
 	font-size: 14pt;
 	line-height: 24pt;
 	padding: 5px;

@@ -1,258 +1,260 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <nav class="block-status-panel  navbar navbar-expand-lg navbar-dark" id="block-status-panel">
-        <div class="container">
-            <div class="navbar-brand">Техномарт</div>
-            <form action="" class="form-inline my-2 my-lg-0">
-                <input style="border:none;outline:none;" type="text" class="form-control mr-sm-2" placeholder="Поиск" area-label="Search">
-            </form>
-            <div class="navbar-header"></div>
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Закладки: 0</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Корзина: 0</a>
-                </li>
-                <li class="nav-item  btn-success">
-                    <a class="nav-link" href="#">Оформить заказ</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header class="block-contact-authority">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="block-title col-md-4">
-                    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-                </div>
-                <div class="block-contacts col-md-4">
-                    <div class="phone">+38(044)555-05-55</div>
-                    <div class="address">г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)</div>
-                </div>
-                <div class="block-authority col-md-4">
-                    <ul>
-	                    <li class="btn">
-	                        <a class="nav-link" href="#">Войти</a>
-	                    </li>
-	                    <li class="btn">
-	                        <a class="nav-link" href="#">Регистрация</a>
-	                    </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <nav class="block-topmenu  navbar-expand-lg navbar-dark ">
-                <ul class="navbar-nav justify-content-around navbar">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Главная</a>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+        <link rel="stylesheet" href="css/flexboxgrid.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/buttons.css">
+    </head>
+    <body>
+        <nav class="status" id="status">
+            <div class="container">
+                <div class="status__brand">Техномарт</div>
+                <form action="" class="status__search search__form">
+                    <input style="border:none;outline:none;" type="text" class="status__search" placeholder="Поиск" area-label="Search">
+                </form>
+                
+                <ul class="navbar navbar--nav">
+                    <li class="navbar__item">
+                        <a class="nav__link" href="#">Закладки: 0</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Компания</a>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#">Корзина: 0</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Каталог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новости</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Спецпредложения</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Доставка</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
+                    <li class="navbar__item  navbar__item--success">
+                        <a class="navbar__link" href="#">Оформить заказ</a>
                     </li>
                 </ul>
-            </nav>
-        </div>
-        
-    </header>
-
-
-    <main class="container">
-        <div class="block-category">
+            </div>
+        </nav>
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center between-md">
+                    <div class="header__title col-md-4 col-sm-offset-1">
+                        <div class="box">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+                    </div>
+                    <div class="header__contacts contacts col-md-4 col-sm-offset-1">
+                        <div class="contacts__phone box">+38(044)555-05-55</div>
+                        <div class="contacts__address box">г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)</div>
+                    </div>
+                    <div class="header__authority col-md-4 col-sm-offset-1">
+                        <ul>
+                            <li class="button box">
+                                <a class="nav-link" href="#">Войти</a>
+                            </li>
+                            <li class="button box">
+                                <a class="nav-link" href="#">Регистрация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <nav class="block-topmenu  navbar-expand-lg navbar-dark ">
+                    <ul class="navbar-nav justify-content-around navbar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Компания</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Новости</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Спецпредложения</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Доставка</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
             
-            <div class="card col col-4">
-                <div class="title">Материалы</div>
-                <a href="#" class="btn">На любой вкус</a>
-                <img src="#" alt="">
-            </div>
-            <div class="card col col-4">
-                <div class="title">Инструмент</div>
-                <a href="#" class="btn">На все случаи</a>
-                <img src="#" alt="">
-            </div>
-            <div class="card col col-4">
-                <div class="title">Техника</div>
-                <a href="#" class="btn">Для стройки</a>
-                <img src="#" alt="">
-            </div>
+        </header>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 
-                </ol>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100" src="images/slide1.png" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Заголовок слайда</h5>
-                      <p>Текст слайда</p>
+        <main class="container">
+            <div class="category row">
+                
+                <div class="category__card col-md-4">
+                    <div class="category__title">Материалы</div>
+                    <a href="#" class="button">На любой вкус</a>
+                    <img src="#" alt="">
+                </div>
+                <div class="category__card col-md-4">
+                    <div class="category__title">Инструмент</div>
+                    <a href="#" class="button">На все случаи</a>
+                    <img src="#" alt="">
+                </div>
+                <div class="category__card col-md-4">
+                    <div class="category__title">Техника</div>
+                    <a href="#" class="button">Для стройки</a>
+                    <img src="#" alt="">
+                </div>
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+
+                    </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="images/slide1.png" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Заголовок слайда</h5>
+                        <p>Текст слайда</p>
+                        </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block w-100" src="images/slide2.png" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Заголовок слайда</h5>
-                      <p>Текст слайда</p>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="images/slide2.png" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Заголовок слайда</h5>
+                        <p>Текст слайда</p>
+                        </div>
                     </div>
-                  </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <div class="card">
-                <div class="title">Скидки 50%</div>
-                <a href="#" class="btn">На 350 товаров</a>
-                <img src="#" alt="">
-            </div>
-            <div class="card">
-                <div class="title">Доставка</div>
-                <a href="#" class="btn">Бесплатно</a>
-                <img src="#" alt="">
-            </div>
-           
-        </div>
-        <div class="top ">
-            <header class="top__header">
-                <span class="top__title"></span>
-                <button class="button button--red">Все популярные товары</button>
-            </header>
-            <div class="top__content goods">
-                <div class="top__item goods__item"></div>
-                <div class="top__item goods__item"></div>
-                <div class="top__item goods__item"></div>
-                <div class="top__item goods__item"></div>
-            </div>            
-        </div>
-        <div class="top">
-            <div class="top__header">
-                <span class="top__title"></span>
-                <button class="button button--red">Все производители</button>
-            </div>
-            <div class="top__content vendors">
-                <div class="top__item vendors__item">
+                <div class="card">
+                    <div class="title">Скидки 50%</div>
+                    <a href="#" class="button">На 350 товаров</a>
                     <img src="#" alt="">
                 </div>
-                <div class="top__item vendors__item">
+                <div class="card">
+                    <div class="title">Доставка</div>
+                    <a href="#" class="button">Бесплатно</a>
                     <img src="#" alt="">
                 </div>
-                <div class="top__item vendors__item">
-                    <img src="#" alt="">
+            
+            </div>
+            <div class="top ">
+                <header class="top__header">
+                    <span class="top__title"></span>
+                    <button class="button button--primary">Все популярные товары</button>
+                </header>
+                <div class="top__content goods">
+                    <div class="top__item goods__item"></div>
+                    <div class="top__item goods__item"></div>
+                    <div class="top__item goods__item"></div>
+                    <div class="top__item goods__item"></div>
+                </div>            
+            </div>
+            <div class="top">
+                <div class="top__header">
+                    <span class="top__title"></span>
+                    <button class="button button--primary">Все производители</button>
                 </div>
-                <div class="top__item vendors__item">
-                    <img src="#" alt="">
+                <div class="top__content vendors">
+                    <div class="top__item vendors__item">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="top__item vendors__item">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="top__item vendors__item">
+                        <img src="#" alt="">
+                    </div>
+                    <div class="top__item vendors__item">
+                        <img src="#" alt="">
+                    </div>
+                </div>  
+            </div>
+            <div class="services">
+                <div class="services__header">
+                    <div class="services__title"></div>
+                    <div class="services__promo"></div>
+                    <div class="services-slider slider">
+                        <ul class="slider_buttons">
+                            <li><button class="">Доставка</button></li>
+                            <li><button>Гарантия</button></li>
+                            <li><button>Кредит</button></li>
+                        </ul>
+                    </div>
                 </div>
-            </div>  
-        </div>
-        <div class="services">
-            <div class="services__header">
-                <div class="services__title"></div>
-                <div class="services__promo"></div>
-                <div class="services-slider slider">
-                    <ul class="slider_buttons">
-                        <li><button class="">Доставка</button></li>
-                        <li><button>Гарантия</button></li>
-                        <li><button>Кредит</button></li>
+            </div>
+            <div class="about">
+                <div class="about__description">
+                    <div class="__title">Компания "Техномарт"</div>
+                    <p>
+                        Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей секономить на гастарбайтерах
+                    </p>
+                    <p>
+                        Мы можем доставить ваш ьовар в самые отдаленные точки! Техномарт работает со многими транспортными компаниями:
+                    </p>
+                    <ul>
+                        <li>Деловые линии</li>
+                        <li>Автотрейдинг</li>
+                        <li>ЖелДорЭкспедиция</li>
                     </ul>
+                    <a href="#">Подробнее о компании</a>
+                </div>
+                <div class="contacts">
+                    <div class="contacts__title">Контакты</div>
+                    <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+                    <div class="contacrs__map">
+                        <img src="#" alt="">
+                    </div>
+                    <a href="#" class="contacts__button">Заблудились? Напишите нам</a>
                 </div>
             </div>
-        </div>
-        <div class="about">
-            <div class="about__description">
-                <div class="__title">Компания "Техномарт"</div>
-                <p>
-                    Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей секономить на гастарбайтерах
-                </p>
-                <p>
-                    Мы можем доставить ваш ьовар в самые отдаленные точки! Техномарт работает со многими транспортными компаниями:
-                </p>
-                <ul>
-                    <li>Деловые линии</li>
-                    <li>Автотрейдинг</li>
-                    <li>ЖелДорЭкспедиция</li>
-                </ul>
-                <a href="#">Подробнее о компании</a>
-            </div>
-            <div class="contacts">
-                <div class="contacts__title">Контакты</div>
-                <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-                <div class="contacrs__map">
+        </main>
+        
+        
+        <footer class="footer">
+            <div class="footer__address">
+                <div class="footer__logo">
                     <img src="#" alt="">
                 </div>
-                <a href="#" class="contacts__button">Заблудились? Напишите нам</a>
+                <div class="footer__address">
+                        г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)
+                </div>
+                <div class="footer__phone">
+                        +38(044)
+                </div>
             </div>
-        </div>
-    </main>
-    
-    
-    <footer class="footer">
-        <div class="footer__address">
-            <div class="footer__logo">
-                <img src="#" alt="">
+            <div class="navbar">
+                <ul class="navbar__list menu">
+                    <li class="menu__item"><a href="#">Компания</a></li>
+                    <li class="menu__item"><a href="#">Новости</a></li>
+                    <li class="menu__item"><a href="#">Каталог</a></li>
+                    <li class="menu__item"><a href="#">Доставка</a></li>
+                    <li class="menu__item"><a href="#">Контакты</a></li>
+                </ul>
             </div>
-            <div class="footer__address">
-                    г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)
+            <div class="social">
+                <div class="social__copyright">2010-2018 Компания "Техномарт" Все права защищены</div>
+                <div class="social__buttons">
+                    <button class="social__button social__button--vkontakte">VKontakte</button>
+                    <button class="social__button social__button--Facebook">Facebook</button>
+                    <button class="social__button social__button--Instagram">Instagram</button>
+                </div>
             </div>
-            <div class="footer__phone">
-                    +38(044)
-            </div>
-        </div>
-        <div class="navbar">
-            <ul class="navbar__list menu">
-                <li class="menu__item"><a href="#">Компания</a></li>
-                <li class="menu__item"><a href="#">Новости</a></li>
-                <li class="menu__item"><a href="#">Каталог</a></li>
-                <li class="menu__item"><a href="#">Доставка</a></li>
-                <li class="menu__item"><a href="#">Контакты</a></li>
+            <ul class="navbar__feedbacks feedback-list">
+                <div class="feedback__item"></div>
+                <div class="feedback__item"></div>
             </ul>
-        </div>
-        <div class="social">
-            <div class="social__copyright">2010-2018 Компания "Техномарт" Все права защищены</div>
-            <div class="social__buttons">
-                <button class="social__button social__button--vkontakte">VKontakte</button>
-                <button class="social__button social__button--Facebook">Facebook</button>
-                <button class="social__button social__button--Instagram">Instagram</button>
-            </div>
-        </div>
-        <ul class="navbar__feedbacks feedback-list">
-            <div class="feedback__item"></div>
-            <div class="feedback__item"></div>
-        </ul>
-    </footer>
+        </footer>
 
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-</body>
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
+    </body>
 </html>
