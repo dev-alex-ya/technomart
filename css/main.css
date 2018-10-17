@@ -1,3 +1,6 @@
+:root {
+  --basecolor: #293449; }
+
 *,
 *::before,
 *::after {
@@ -1090,6 +1093,9 @@ template {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
   .form-control::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1; }
+  .form-control:-ms-input-placeholder {
     color: #6c757d;
     opacity: 1; }
   .form-control::-ms-input-placeholder {
@@ -4963,3 +4969,20 @@ a.text-dark:hover, a.text-dark:focus {
 
 .invisible {
   visibility: hidden !important; }
+
+.block-status-panel {
+  background-color: var(--basecolor);
+  padding: 0;
+  margin-bottom: -5px; }
+
+.navbar-brand {
+  background-color: #ee3643;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  border-bottom: 5px solid #b52933;
+  margin: 0 18px 0 0; }
