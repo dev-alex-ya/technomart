@@ -1,0 +1,23 @@
+.block-auth {
+    .list {
+        list-style-type: none;
+    }
+    .item {
+        display: inline-block;
+    }
+    .btn-auth {
+        background-color: #ffffff;
+    }
+
+    .nav-link {
+        color: #000000;
+    }
+
+    .nav-link:hover {
+        color: #ee3643;
+    }
+
+    .nav-link:active {
+        color: #cacaca;
+    }
+}
