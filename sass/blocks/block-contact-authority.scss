@@ -1,0 +1,33 @@
+.block-contact-authority {
+    .row {
+        background-color: #f1f5f7;
+        margin: 0;
+    }
+}
+
+.block-title  {
+    padding: 50px;
+
+    h1 {
+        color: red;
+        font-size: 16pt;
+        line-height: 23pt;
+    }
+}
+
+.block-contacts {
+    .phone {
+        border: 3px solid #fff;
+        // text-align: right;
+        font-size: 21pt;
+        line-height: 21pt;
+        color: #e9292a;
+        padding: 8pt;
+    }
+    .address {
+        color: #32425c;
+        padding: 5px 0 0 10px;
+        font-size: 10pt;
+        line-height: 24pt;
+    }
+}
