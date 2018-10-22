@@ -23,6 +23,7 @@
 @import "../node_modules/bootstrap/scss/utilities";
  
 // Подключение своих SCSS файлов
+@import "fonts.scss";
 @import "blocks/block-status-panel.scss";
 @import "blocks/header.scss";
 @import "blocks/block-contacts.scss";
