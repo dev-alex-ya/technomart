@@ -1,16 +1,26 @@
 .block-auth {
+    text-align: right;
+    padding: 0;
     .list {
         list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
     .item {
+        margin-left: 10px;
         display: inline-block;
+        
     }
     .btn-auth {
         background-color: #ffffff;
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .nav-link {
         color: #000000;
+        font-size: 20pt;
+        line-height: 21pt;
     }
 
     .nav-link:hover {
