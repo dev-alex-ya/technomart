@@ -1,0 +1,15 @@
+.block-topmenu {
+
+    background-color: var(--menucolor);
+    
+    .navbar-nav {
+        padding: 0;
+    }
+
+    .nav-link {
+        color: #ffffff;
+    }
+    .nav-item:hover {
+        background-color: var(--basecolor);
+    }
+}
