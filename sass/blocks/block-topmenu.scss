@@ -1,6 +1,7 @@
 .block-topmenu {
 
     background-color: var(--menucolor);
+    margin-bottom: 60px;
     
     .navbar-nav {
         padding: 0;
@@ -8,6 +9,8 @@
 
     .nav-link {
         color: #ffffff;
+        padding-top: 22px;
+        padding-bottom: 21px;
     }
     .nav-item:hover {
         background-color: var(--basecolor);
