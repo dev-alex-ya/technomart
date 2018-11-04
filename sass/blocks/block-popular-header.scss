@@ -1,8 +1,21 @@
 .block-popular-header {
+    justify-content: space-between;
+    background-color: #f7f3ec;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 25px;
     .title {
         font-weight: 400;
         font-size: 30pt;
         line-height: 30pt;
         text-transform: uppercase;
+    }
+    .btn-all {
+        background-color: #ee3643;
+        color: #fff;
+        width: 255px;
+        height: 40px;
+        font-size: 14pt;
+        line-height: 18pt;
     }
 }

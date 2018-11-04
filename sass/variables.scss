@@ -24,3 +24,49 @@ $container-max-widths: (
   md: 720px,
   lg: 970px
 );
+
+//
+// Color system
+//
+
+// $blue:    #4aafde;
+// $indigo:  #6610f2;
+// $purple:  #cc79d1;
+// $pink:    #e83e8c;
+// $red:     #ee3643;
+// $orange:  #f6b22d;
+// $green:   #85d179;
+// $green:   #85d179;
+// $dark-green: #63a63e;
+// $teal:    #20c997;
+// $cyan:    #17a2b8;
+
+// $colors: map-merge(
+//   (
+//     "blue":       $blue,
+//     "indigo":     $indigo,
+//     "purple":     $purple,
+//     "pink":       $pink,
+//     "red":        $red,
+//     "orange":     $orange,
+//     "yellow":     $yellow,
+//     "green":      $green,
+//     "dark-green": $dark-green,
+//     "teal":       $teal,
+//     "cyan":       $cyan,
+//     "white":      $white,
+//     "gray":       $gray-600,
+//     "gray-dark":  $gray-800
+//   ),
+//   $colors
+// );
+
+
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $dark-green;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-800 !default;
