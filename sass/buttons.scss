@@ -1,0 +1,21 @@
+
+.btn-buy {
+    background-color: #ee3643;
+    color: #fff;
+}
+
+
+.btn-buy:hover {
+    background-color: #ee3643;
+    color: #fff;
+}
+
+.btn-buy::after {
+    background-color: #3642ee;
+    border: #ee3643 20px solid;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+}
