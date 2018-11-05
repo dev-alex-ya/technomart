@@ -28,4 +28,5 @@ gulp.task("serve", ["style"], function(){
     });
 
     gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+    gulp.watch("*.html", server.reload);
 });
