@@ -1,3 +1,4 @@
+/*cuprum*/
 @font-face {
     font-family: cuprumRegular;
     src: url('../fonts/Cuprum/Cuprum-Regular.ttf') format('truetype');
@@ -22,4 +23,11 @@
     src: url('../fonts/Cuprum/Cuprum-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+}
+
+/*ptsans*/
+@font-face {
+    font-family: PTSans;
+    src: url('../fonts/ptsans/ptsans.woff2') format("woff2"),
+    url("../fonts/ptsans/ptsans.woff") format("woff");
 }
