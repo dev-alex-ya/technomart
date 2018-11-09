@@ -1,8 +1,19 @@
-.block-topmenu {
+.block-bottommenu {
 
     background-color: var(--menucolor);
     // margin-bottom: 60px;
+    padding: 0;
+
+    .address {
+        color: #ffffff;
+    }
+    .nav-item {
+        .text-yellow {
+            color: #ffd180;
+        }
+    }
     
+
     .navbar-nav {
         padding: 0;
     }
