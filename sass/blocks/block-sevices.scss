@@ -1,0 +1,35 @@
+.block-services {
+    background-color: #f2f6f8;
+    padding-top: 65px;
+    .promo {
+        margin-bottom: 70px;
+    }
+    .promo-title {
+        font-size: 30pt;
+        line-height: 30pt;
+        font-family: cuprumRegular, sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .promo-body {
+        font-size: 13pt;
+        line-height: 24pt;
+        font-family: PTSans, sans-serif;
+        font-weight: 400;
+    }
+    .bar{
+        display: flex;
+        justify-content: space-between;
+        .promo-body {
+            width: 425px;
+        }
+    }
+    .list-group {
+        
+        margin-right: 80px;
+    }
+    .list-group-item {
+        width: 240px;
+    }
+}
