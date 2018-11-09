@@ -36,7 +36,7 @@
 // @import "../node_modules/bootstrap/scss/alert";
 // @import "../node_modules/bootstrap/scss/progress";
 @import "../node_modules/bootstrap/scss/media";
-// @import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/list-group";
 // @import "../node_modules/bootstrap/scss/close";
 // @import "../node_modules/bootstrap/scss/modal";
 // @import "../node_modules/bootstrap/scss/tooltip";
@@ -59,3 +59,13 @@
 @import "blocks/block-popular-vendors.scss";
 @import "blocks/block-popular-header.scss";
 @import "blocks/block-popular-items.scss";
+@import "blocks/block-sevices.scss";
+
+.title {
+    font-size: 30pt;
+    line-height: 30pt;
+    font-family: cuprumRegular, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
