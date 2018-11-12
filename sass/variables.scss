@@ -52,7 +52,7 @@ $container-max-widths: (
 //
 // Color system
 //
-
+$breadcrumb-bg: white;
 // $blue:    #4aafde;
 // $indigo:  #6610f2;
 // $purple:  #cc79d1;
@@ -94,3 +94,6 @@ $container-max-widths: (
 // $danger:        $red !default;
 // $light:         $gray-100 !default;
 // $dark:          $gray-800 !default;
+
+// $breadcrumb-divider: quote(">");
+$breadcrumb-divider: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0yLjUgMEwxIDEuNSAzLjUgNCAxIDYuNSAyLjUgOGw0LTQtNC00eiIgZmlsbD0iY3VycmVudENvbG9yIi8+PC9zdmc+);
