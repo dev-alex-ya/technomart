@@ -1,3 +1,27 @@
 .block-range {
     
+    .range {
+        width: 260px;
+        margin: 40px auto;
+        /*условно*/
+    }
+
+    .range-title {
+        
+    }
+
+    .range-controls {
+        margin-bottom: 15px;
+        background-color: #f1f1f1;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .custom-range {
+        // 
+    }
 }
