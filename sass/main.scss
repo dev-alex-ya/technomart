@@ -25,7 +25,7 @@
 // @import "../node_modules/bootstrap/scss/dropdown";
 // @import "../node_modules/bootstrap/scss/button-group";
 // @import "../node_modules/bootstrap/scss/input-group";
-// @import "../node_modules/bootstrap/scss/custom-forms";
+@import "../node_modules/bootstrap/scss/custom-forms";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/card";
@@ -47,8 +47,10 @@
 
 // Подключение своих SCSS файлов
 @import "fonts.scss";
+@import "filter.scss";
 @import "buttons.scss";
 @import "label-new.scss";
+@import "main-title.scss";
 @import "blocks/block-status-panel.scss";
 @import "blocks/header.scss";
 @import "blocks/block-contacts.scss";
@@ -62,8 +64,7 @@
 @import "blocks/block-popular-items.scss";
 @import "blocks/block-sevices.scss";
 @import "blocks/block-social.scss";
-@import "main-title.scss";
-@import "filter.scss";
+@import "blocks/block-range.scss";
 
 
 .title {
