@@ -4,7 +4,7 @@
 }
 
 
-$grid-gutter-width:           20px;
+
 
 .text-yellow {
   color: #ffd180;
@@ -28,11 +28,11 @@ $grid-breakpoints: (
 $container-max-widths: (
   sm: 540px,
   md: 720px,
-  lg: 970px
+  lg: 960px
 );
 
 // Cards
-
+$grid-gutter-width:           20px;
 // $card-spacer-y:                     .75rem !default;
 // $card-spacer-x:                     1.25rem !default;
 // $card-border-width:                 $border-width !default;
