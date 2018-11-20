@@ -5,15 +5,18 @@ let sass = require("gulp-sass");
 let plumber = require("gulp-plumber");
 let postcss = require("gulp-postcss");
 let autoprefixer = require("autoprefixer");
+let sourcemaps = require("gulp-sourcemaps");
 let server = require("browser-sync");
 
-gulp.task("style", function(){
+gulp.task("style", function() {
     gulp.src("sass/main.scss")
+    .pipe(sourcemaps.init())
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
         autoprefixer()
     ]))
+    .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest("css"))
     .pipe(server.stream());
 });
