@@ -47,7 +47,6 @@
 
 // Подключение своих SCSS файлов
 @import "fonts.scss";
-@import "filter.scss";
 @import "buttons.scss";
 @import "label-new.scss";
 @import "main-title.scss";
@@ -64,8 +63,9 @@
 @import "blocks/block-popular-items.scss";
 @import "blocks/block-sevices.scss";
 @import "blocks/block-social.scss";
+@import "blocks/block-filter.scss";
 @import "blocks/block-range.scss";
-
+@import "blocks/block-catalog.scss";
 
 .title {
     font-size: 30pt;
@@ -75,3 +75,4 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
+
