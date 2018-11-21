@@ -26,24 +26,27 @@
     line-height: 18pt;
 }
 
-.btn-social {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-}
-
-
 .btn-buy:hover {
     background-color: #ee3643;
     color: #fff;
 }
 
 .btn-buy::after {
-    background-color: #3642ee;
-    border: #ee3643 20px solid;
+    // background-color: #3642ee;
+    border: transparent 21px solid;
+    border-left-color: #3642ee;
     position: relative;
-    top: 10px;
-    left: 50px;
-    width: 40px;
-    height: 40px;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    font-size: 1px;
+    content: '';
+}
+
+
+.btn-social {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
