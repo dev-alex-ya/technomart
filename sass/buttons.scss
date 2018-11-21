@@ -21,9 +21,10 @@
 .btn-buy {
     background-color: #ee3643;
     color: #fff;
-    padding: 16px 35px;
+    padding: 16px 25px;
     font-size: 17pt;
     line-height: 18pt;
+    position: relative;
 }
 
 .btn-buy:hover {
@@ -34,13 +35,13 @@
 .btn-buy::after {
     // background-color: #3642ee;
     border: transparent 21px solid;
-    border-left-color: #3642ee;
-    position: relative;
-    top: 50%;
-    left: 50%;
+    border-left-color: #ee3643;
+    position: absolute;
+    top: 0;
+    left: 100%;
     width: 0;
-    height: 0;
-    font-size: 1px;
+    height: 100%;
+    // font-size: 1px;
     content: '';
 }
 
