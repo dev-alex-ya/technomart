@@ -1,6 +1,33 @@
 .pagination {
-	margin-bottom: 0;
-	.page-item {
-		margin-right: 10px;
-	}
+    margin-bottom: 0;
+    // color: #000000;
+
+    .page-item {
+        margin-right: 10px;
+        // color: #000000;
+    }
+
+    .page-link {
+        border-color: #e5e5e5;
+        color: #000000;
+    }
+
+    .page-link:hover {
+        border-color: #bdc6ca;
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .page-link:active {
+        border-color: #ee3643;
+        background-color: #ffffff;
+        color: #000000;
+        outline:none;
+    }
+
+    .active .page-link {
+        background-color: #ee3643 !important;
+        border-color: #ee3643;
+        color: #ffffff;
+    }
 }
