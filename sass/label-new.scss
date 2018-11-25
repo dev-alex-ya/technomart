@@ -1,14 +1,14 @@
 .new {
     overflow: hidden;
+    position: relative;
 }
 
 .new::before {
-    float: right;
-    position: relative;
+    position: absolute;
     z-index: 6;
     display: block;
-    right: -47px;
-    top: -19px;
+    right: -23px;
+    top: 7px;
     width: 85px;
     height: 28px;
     content: "NEW";
