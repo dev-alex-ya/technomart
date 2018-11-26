@@ -226,24 +226,68 @@
                     Мы стараемся изо всех сил, чтобы сделать выши покупки приятными.
                 </div>
             </div>
-            <div class="bar">
-                <ul class="list-group">
-                    <li class="list-group-item disabled">Доставка</li>
-                    <li class="list-group-item">Гарантия</li>
-                    <li class="list-group-item">Кредит</li>
-                </ul>
-                <div class="promo">
-                    <div class="promo-title">
+            <div class="block-list row">
+                <div class="col-md-3 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#delivery" role="tab" aria-controls="v-pills-home" aria-selected="true">
                         Доставка
+                    </a>
+                    <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#warranty" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                        Гарантия
+                    </a>
+                    <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#credit" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                        Кредит
+                    </a>
+                </div>
+                <div class="col-md-8 tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="delivery" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        <div class="d-flex position-relative justify-content-start">
+                            <div class="promo">
+                                <div class="promo-title">
+                                    Доставка
+                                </div>
+                                <div class="promo-body">
+                                    Мы с удовольствием доставим ваш товар прямо
+                                    к вашему подъезду совершенно бесплатно!
+                                    Ведь мы неплохо зарабатываем,
+                                    поднимая его на ваш этаж!
+                                </div>
+                            </div>
+                            <img id="promo-delivery" src="images/promo/delivery.png" alt="Картина быстрой доставки">
+                            <!-- <img id="promo-delivery-shadow" class="position-absolute" src="images/promo/delivery-shadow.png" alt="Картина быстрой доставки"> -->
+                        </div>
                     </div>
-                    <div class="promo-body">
-                        Мы с удовольствием доставим ваш товар прямо
-                        к вашему подъезду совершенно бесплатно!
-                        Ведь мы неплохо зарабатываем,
-                        поднимая его на ваш этаж!
+                    <div class="tab-pane fade" id="warranty" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                       <div class="d-flex justify-content-start">
+                           <div class="promo">
+                                <div class="promo-title">
+                                    Гарантия
+                                </div>
+                                <div class="promo-body">
+                                    Если купленный у нас товар поломается или заискрит, 
+                                    а также в случае пожара, спровоцированного его возгаранием,
+                                    вы всегда можете быть уверены в нашей гарантии.
+                                    Мы обменяем сгоревший товар на новый. 
+                                    Дом уж восстановите как-нибудь сами.
+                                </div>
+                            </div>
+                            <img id="promo-warranty" src="images/promo/warranty.png" alt="Картина надежной гарантии">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="credit" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                        <div class="d-flex justify-content-start">
+                            <div class="promo">
+                                <div class="promo-title">
+                                    Кредит
+                                </div>
+                                <div class="promo-body">
+                                    Залезть в долговую яму стало проще!
+                                    Кредитные консультанты придут вам ан помощь.
+                                </div>
+                            </div>
+                            <img id="promo-credit" src="images/promo/credit.png" alt="Картина приятного кредита">
+                        </div>
                     </div>
                 </div>
-                <img src="" alt="">
             </div>
         </div>
     </div>
