@@ -5,8 +5,6 @@
 
     .block-list {
         .nav {
-            
-
             a {
                 color: #ffffff;
                 font-size: 21pt;
@@ -23,6 +21,7 @@
                 border-radius: 0;
             }
         }
+
         .tab-content {
 
         }
@@ -54,10 +53,6 @@
         font-weight: 400;
     }
 
-    .nav {
-        // margin-bottom: 150px;
-    }
-
     .bar{
         display: flex;
         justify-content: space-between;
@@ -68,12 +63,7 @@
     }
 
     .list-group {
-        
         margin-right: 80px;
-    }
-
-    .list-group-item {
-        // width: 240px;
     }
 
     #promo-delivery {
@@ -85,10 +75,6 @@
     #promo-delivery-shadow {
         top: 0;
         left: 135px;
-        
-        // content : "";
-        // content: url('../images/promo/delivery-shadow.png') no-repeat;
-        
     }
 
     #promo-warranty {
