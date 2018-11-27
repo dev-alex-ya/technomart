@@ -1,3 +1,9 @@
 .block-map {
-    
+    flex-basis: 200px;
+    margin-left: 100px;
+
+    .map {
+        width: 300px;
+        height: 160px;
+    }
 }
