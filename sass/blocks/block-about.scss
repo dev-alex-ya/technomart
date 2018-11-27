@@ -1,4 +1,18 @@
 .block-about {
-    display: flex;
+    --line-height: 18px;
+
     margin-bottom: 90px;
+
+    .btn {
+        // height: 40px;
+        padding: calc(40px - var(--line-height)) 40px;
+        font-size: 18px;
+        font-family: cuprumRegular, sans, sans-serif;
+        line-height: var(--line-height);
+        text-transform: uppercase;
+    }
+
+    .about {
+        max-width: calc(100% - 300px - 100px);
+    }
 }
