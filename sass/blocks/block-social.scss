@@ -34,10 +34,11 @@
         }
 
         .nav-link {
-            display: inline-block;
             font-size: 0;
-	        // vertical-align: top;
-	        text-decoration: none;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
@@ -48,9 +49,7 @@
     }
 
     .vk {
-        background: #212a3a url('images/socials/fb.png');
-        // background-color: transparent;
-        background-image: url('images/socials/vk.png');
+        background: #212a3a url('images/socials/vk.png');
     }
 
     .fb {
