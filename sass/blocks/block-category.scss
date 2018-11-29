@@ -6,12 +6,13 @@
     margin-bottom: 55px;
 
     .card {
-        padding: 25px;
+        // padding: 25px;
         color: #ffffff;
         .title {
             font-family: cuprumRegular, sans-serif;
             font-size: 24pt;
             line-height: 30pt;
+            // margin: 25px;
         }
         .btn {
             font-family: cuprumBold, sans-serif;
@@ -22,6 +23,16 @@
             background-color: rgba($color: #000000, $alpha: 0.1);
             padding-left: 25px;
             padding-right: 25px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        img {
+            display: inline;
         }
     }
 }
@@ -37,20 +48,45 @@
 
 .materials {
     background-color: #f6b22d;
+
+    img {
+        width: 44px;
+        height: 65px;
+    }
 }
 
 .tools {
     background-color: #4aafde;
+
+    img {
+        width: 75px;
+        height: 61px;
+    }
 }
 
 .technics {
     background-color: #cc79d1;
+
+    img {
+        width: 78px;
+        height: 62px;
+    }
 }
 
 .discount {
     background-color: #85d179;
+
+    img {
+        width: 59px;
+        height: 72px;
+    }
 }
 
 .delivery {
     background-color: #f6b22d;
+
+    img {
+        width: 78px;
+        height: 63px;
+    }
 }
