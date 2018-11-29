@@ -1,10 +1,12 @@
 .block-popular-vendors {
-    margin-bottom: 85px;
+    --margin-under-cart: 20px;
+
+    margin-bottom: calc(85px - var(--margin-under-cart);
 
     .goods {
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: var(--margin-under-cart);
         height: 145px;
         
         .card-img-top {
