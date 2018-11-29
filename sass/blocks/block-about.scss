@@ -1,7 +1,22 @@
 .block-about {
     --line-height: 18px;
-
     margin-bottom: 90px;
+
+    .tire {
+        list-style-type: none;
+        position: relative;
+    }
+
+    .tire::before {
+        content: "";
+        position: absolute;
+        display: inline;
+        width: 25px;
+        height: 2px;
+        background-color: #fb565a;
+        bottom: 11px;
+        left: -35px;
+    }
 
     .btn {
         // height: 40px;
