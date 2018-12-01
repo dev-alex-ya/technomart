@@ -22,19 +22,30 @@
             }
         }
 
-        .tab-content {
+        .nav-pills {
+            margin-left: 5px;
+            width: 240px;
 
+            margin-bottom: 100px;
+        }
+
+        .tab-content {
+            margin-left: 20px;
+            // padding-right: 0;
         }
     }
 
 
     img {
-        
-        margin: 10px;
+        margin-left: 135px;
+    }
+
+    .promo-intro {
+        margin-bottom: 75px;
     }
 
     .promo {
-        margin-bottom: 70px;
+        // margin-right: 130px;
     }
 
     .promo-title {
@@ -47,8 +58,8 @@
     }
 
     .promo-body {
-        font-size: 13pt;
-        line-height: 24pt;
+        font-size: 13px;
+        line-height: 24px;
         font-family: PTSans, sans-serif;
         font-weight: 400;
     }
@@ -74,7 +85,7 @@
 
     #promo-delivery-shadow {
         top: 0;
-        left: 135px;
+        right: 0;
     }
 
     #promo-warranty {

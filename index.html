@@ -261,7 +261,7 @@
 
     <div class="block-services">
         <div class="container">
-            <div class="promo">
+            <div class="promo-intro">
                 <div class="promo-title">
                     Сервисы
                 </div>
@@ -270,8 +270,8 @@
                     Мы стараемся изо всех сил, чтобы сделать выши покупки приятными.
                 </div>
             </div>
-            <div class="block-list row">
-                <div class="col-md-3 nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <div class="block-list row justify-content-between">
+                <div class=" nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                     <div class="nav flex-column nav-pills">
                         <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#delivery" role="tab" aria-controls="v-pills-home" aria-selected="true">
                             Доставка
@@ -287,8 +287,8 @@
                 <div class="col-md-8 tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active" id="delivery" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         <div class="d-flex position-relative justify-content-start">
-                            <div class="promo">
-                                <div class="promo-title">
+                            <div class="promo-text">
+                                <div class="promo">
                                     Доставка
                                 </div>
                                 <div class="promo-body">
@@ -298,12 +298,12 @@
                                     поднимая его на ваш этаж!
                                 </div>
                             </div>
-                            <img id="promo-delivery" src="images/promo/delivery.png" alt="Картина быстрой доставки">
-                            <!-- <img id="promo-delivery-shadow" class="position-absolute" src="images/promo/delivery-shadow.png" alt="Картина быстрой доставки"> -->
+                            <img id="promo-delivery" src="images/promo/delivery.png" alt="Картина быстрой доставки" style="z-index:1;">
+                            <img id="promo-delivery-shadow" class="position-absolute" src="images/promo/delivery-shadow.png" alt="Картина быстрой доставки" style="z-index:0;">
                         </div>
                     </div>
                     <div class="tab-pane fade" id="warranty" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                       <div class="d-flex justify-content-start">
+                       <div class="d-flex">
                            <div class="promo">
                                 <div class="promo-title">
                                     Гарантия
@@ -320,7 +320,7 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="credit" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <div class="d-flex justify-content-start">
+                        <div class="d-flex">
                             <div class="promo">
                                 <div class="promo-title">
                                     Кредит
