@@ -1,9 +1,9 @@
 .block-popular-vendors {
     --margin-under-cart: 20px;
 
-    margin-bottom: calc(85px - var(--margin-under-cart);
+    margin-bottom: calc(85px - var(--margin-under-cart));
 
-    .goods {
+    .block-goods {
         display: flex;
         justify-content: center;
         margin-bottom: var(--margin-under-cart);
