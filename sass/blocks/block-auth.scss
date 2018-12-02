@@ -15,14 +15,35 @@
         background-color: #ffffff;
         padding-left: 25px;
         padding-right: 25px;
+
+    }
+
+    .login {
+        position: relative;
+        padding-left: 50px;
+    }
+
+    .login::before {
+        position: absolute;
+        content: url("../images/icons/icon-login.png");
+        width: 20px;
+        height: 17px;
+        // z-index: 5;
+        left: 15px;
+    }
+
+    .login:hover::before {
+        content: url("../images/icons/icon-login_hover.png");
+    }
+
+    .login:active::before {
+        content: url("../images/icons/icon-login.png");
     }
 
     .nav-link {
         color: #000000;
         font-size: 20pt;
-        line-height: 21pt;
-    }
-
+        line-height: 21pt; 
     .nav-link:hover {
         color: #ee3643;
     }
