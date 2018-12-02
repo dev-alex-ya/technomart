@@ -21,8 +21,8 @@
 .btn-buy {
     background-color: #ee3643;
     color: #fff;
-    padding: 16px 25px;
-    font-size: 17pt;
+    padding: 6px 25px;
+    font-size: 17px;
     line-height: 18pt;
     position: relative;
 }
@@ -32,9 +32,9 @@
     color: #fff;
 }
 
-.btn-buy::after {
+.btn-buy::after {// кончик
     // background-color: #3642ee;
-    border: transparent 21px solid;
+    border: transparent 18px solid;
     border-left-color: #ee3643;
     position: absolute;
     top: 0;
