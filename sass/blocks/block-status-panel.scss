@@ -76,6 +76,7 @@
 }
 
 .navbar-brand {
+    position: relative;
     background-color: #ee3643;
     color: #ffffff;
     font-size: 24px;
@@ -85,6 +86,32 @@
     padding-right: 55px;
     padding-top: 13px;
     padding-bottom: 12px;
-    border-bottom: 5px solid #b52933;
+    // border-bottom: 5px solid #b52933;
     margin: 0 18px 0 0;
+}
+
+.navbar-brand:hover {
+    background-color: #ca2c37;
+}
+
+.navbar-brand:active {
+    background-color: #ba2732;
+}
+
+.navbar-brand::after {    
+    width: 100%;
+    height: 5px;
+    left: 0px;
+    bottom: -5px;
+    content: "";
+    position: absolute;
+    background-color: #b52933;
+}
+
+.navbar-brand:hover::after {
+    background-color: #9a212a;
+}
+
+.navbar-brand:active::after {
+    background-color: #8e1e26;
 }
