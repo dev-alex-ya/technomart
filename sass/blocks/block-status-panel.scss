@@ -2,6 +2,67 @@
     background-color: var(--basecolor);
     padding: 0;
     margin-bottom: -5px;
+
+    .nav-link {
+        display: flex;
+        justify-content: flex-end;
+        width: 150px;
+        padding-right: 5px;
+        // background-color: green;
+    }
+
+    .nav-link:hover {
+        color: #f0f1f2;
+        // background-color: red;
+    }
+
+    .nav-link:active {
+        color: #a2a5a9;
+        background-color: #161d29;
+    }
+
+    .bookmark {
+        position: relative;
+    }
+
+    .bookmark::before {
+        position: absolute;
+        content: url("../images/icons/bookmark.png");
+        width: 20px;
+        height: 17px;
+        left: 20px;
+        bottom: 12px;
+    }
+
+    .bookmark:hover::before {
+        content: url("../images/icons/bookmark-hover.png");
+    }
+
+    .bookmark:active::before {
+        content: url("../images/icons/bookmark-active.png");
+    }
+
+    //basket
+    .basket {
+        position: relative;
+    }
+
+    .basket::before {
+        position: absolute;
+        content: url("../images/icons/bookmark.png");
+        width: 20px;
+        height: 17px;
+        left: 30px;
+        bottom: 12px;
+    }
+
+    .basket:hover::before {
+        content: url("../images/icons/bookmark-hover.png");
+    }
+
+    .basket:active::before {
+        content: url("../images/icons/bookmark-active.png");
+    }
 }
 
 .navbar-brand {
