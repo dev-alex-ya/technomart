@@ -49,7 +49,7 @@
 
     .basket::before {
         position: absolute;
-        content: url("../images/icons/bookmark.png");
+        content: url("../images/icons/basket.png");
         width: 20px;
         height: 17px;
         left: 30px;
@@ -57,11 +57,11 @@
     }
 
     .basket:hover::before {
-        content: url("../images/icons/bookmark-hover.png");
+        content: url("../images/icons/basket-hover.png");
     }
 
     .basket:active::before {
-        content: url("../images/icons/bookmark-active.png");
+        content: url("../images/icons/basket-active.png");
     }
 }
 
