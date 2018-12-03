@@ -1,0 +1,15 @@
+.block-intro {
+
+    .phone {
+        position: relative;
+        padding-left: 50px;
+    }
+
+    .phone::before {
+        position: absolute;
+        content: url("../images/icons/phone.png");
+        width: 20px;
+        height: 17px;
+        left: 15px;
+    }
+}
