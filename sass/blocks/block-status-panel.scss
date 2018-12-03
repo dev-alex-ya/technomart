@@ -63,6 +63,16 @@
     .basket:active::before {
         content: url("../images/icons/basket-active.png");
     }
+
+    .checkout:hover {
+        color: #ffffff;
+        background-color: #5fbb2d;
+    }
+
+    .checkout:active {
+        color: #a4bf94;
+        background-color: #518534;
+    }
 }
 
 .navbar-brand {
