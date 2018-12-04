@@ -23,10 +23,23 @@
         }
 
         .nav-pills {
-            margin-left: 5px;
             width: 240px;
+            margin-bottom: 20px; //Временно
+            position: relative;            
+            overflow: hidden;
+            z-index: 20;
+            margin-top: 20px;
 
-            margin-bottom: 100px;
+            &:before {
+                content: '';
+                width: 1px;
+                height: calc(100% + 20px);
+                box-shadow: 20px 2px 20px 17px rgba(50, 50, 50, 0.75);
+                position: absolute;
+                right: -1px;
+                top: -20px;
+                bottom: -20px;
+            }
         }
 
         .tab-content {
