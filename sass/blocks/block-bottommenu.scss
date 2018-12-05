@@ -1,7 +1,18 @@
 .block-bottommenu {
-
     background-color: var(--menucolor);
     padding: 0;
+
+    .nav-link.text-yellow {
+        color: #ffd180 !important;
+    }
+
+    .nav-link.text-yellow:hover {
+        color: #ffd180 !important;
+    }
+
+    .nav-link.text-yellow:active {
+        color: #998a6e !important;
+    }
 
     .address {
         color: #ffffff;
