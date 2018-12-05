@@ -4,6 +4,15 @@
     padding-top: 35px;
 
 
+    .text-yellow {
+        color: #ffd180;
+        cursor: pointer;
+    }
+
+    .text-yellow:hover {
+        text-decoration: underline;
+    }
+
     .container {
         display: flex;
         flex-direction: row;
@@ -49,6 +58,11 @@
     .feedback {
         .nav-item {
             color: #ffffff;
+        }
+
+        .text-yellow:active {
+            color: #ee3643;
+            text-decoration: none;
         }
     }
 
