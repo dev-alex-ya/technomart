@@ -28,5 +28,9 @@
 
     .about {
         max-width: calc(100% - 300px - 100px);
+        padding-left: 0;
+        .promo-body {
+            font-size: 13px;
+        }
     }
 }
