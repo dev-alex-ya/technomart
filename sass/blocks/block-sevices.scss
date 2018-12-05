@@ -2,8 +2,10 @@
     background-color: #f2f6f8;
     padding-top: 65px;
     margin-bottom: 80px;
+    border: 1px solid transparent;
 
     .block-list {
+        margin-bottom: 65px;
         .nav {
             a {
                 color: #ffffff;
@@ -24,12 +26,12 @@
 
         .nav-pills {
             width: 240px;
+            margin-top: 20px;
             margin-bottom: 20px; //Временно
             position: relative;            
             overflow: hidden;
             z-index: 20;
-            margin-top: 20px;
-
+            
             &:before {
                 content: '';
                 width: 1px;
@@ -44,6 +46,7 @@
 
         .tab-content {
             margin-left: 20px;
+            margin-top: 40px;
         }
     }
 
