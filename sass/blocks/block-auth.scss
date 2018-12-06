@@ -16,14 +16,12 @@
     
     .btn-auth {
         background-color: #ffffff;
-        // padding-left: 20px;
-        // padding-right: 20px;
         height: 45px;
     }
 
     .login {
         position: relative;
-        padding-left: 50px;
+        padding-left: 45px;
     }
 
     .login::before {
@@ -40,6 +38,61 @@
 
     .login:active::before {
         content: url("../images/icons/icon-login.png");
+    }
+
+    .loggedin {
+        position: relative;
+        padding-left: 47px;
+        padding-right: 40px;
+    }
+
+    .loggedin::before {
+        position: absolute;
+        content: url("../images/icons/user.png");
+        width: 20px;
+        height: 17px;
+        left: 15px;
+    }
+
+    .loggedin:hover::before {
+        content: url("../images/icons/user-hover.png");
+    }
+
+    .loggedin:active::before {
+        content: url("../images/icons/user-active.png");
+    }
+
+    .loggedin::after {
+        position: absolute;
+        content: url("../images/icons/logout.png");
+        width: 20px;
+        height: 17px;
+        right: 15px;
+    }
+
+    .loggedin:hover::after {
+        content: url("../images/icons/logout-hover.png");
+    }
+
+    .loggedin:active::after {
+        content: url("../images/icons/logout-active.png");
+    }
+
+    .auth-myorders {
+        color: #32425c;
+        text-decoration: underline;
+    }
+
+    .auth-cabinet {
+        color: #32425c;
+        text-decoration: underline;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        background: red;
+        border-radius: 50%
     }
 
     .nav-link {
