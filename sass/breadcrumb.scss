@@ -1,3 +1,18 @@
 .breadcrumb {
-    
+
+    a, .active {
+        color: #222222;
+        text-transform: uppercase;
+        font-family: PTSans, sans, sans-serif;
+        font-weight: 400;
+        // line-height: 18px;//прыгают слова
+        // font-size: 13px;
+    }
+
+    .home {
+        a {
+            content: none;
+            content: url("../images/icons/home.png");
+        }
+    }
 }
