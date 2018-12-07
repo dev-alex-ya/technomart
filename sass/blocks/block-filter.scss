@@ -10,57 +10,142 @@
     margin-bottom: 50px;
 }
 
-.filter-section .section-name {
-    margin-bottom: 50px;
+.section-name {
+    margin-bottom: 20px;
+    // background-color: white;
 }
 
-.filter-section li {
-    margin-bottom: 20px;
-}
+
+// .filter-section li {
+//     margin-bottom: 20px;
+// }
 
 .price-controls {
     position: relative;
+
+    .label-min {
+        position: absolute;
+        left: 0;
+    }
+
+    .label-max {
+        position: absolute;
+        right: 0;
+    }
+
+    input {
+        width: 60px;
+        padding: 8px 10px;
+        margin-left: 10px;
+        border: none;
+        background: #f1f1f1;
+        font-size: 16px;
+        font-family: var(--fontFamily);
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        color: #283136;
+        border-radius: 5px;
+    }
 }
 
-.price-controls .label-min {
-    position: absolute;
-    left: 0;
-}
-
-.price-controls .label-max {
-    position: absolute;
-    right: 0;
-}
-
-.price-controls input {
-    width: 60px;
-    padding: 8px 10px;
-    margin-left: 10px;
-    border: none;
-    background: #f1f1f1;
-    font-size: 16px;
-    font-family: var(--fontFamily);
-    font-weight: 300;
-    font-style: normal;
-    text-align: center;
-    color: #283136;
-    border-radius: 5px;
-}
-
-.filter-grid ul {
+.custom-list ul {
     padding: 0;
 }
 
-.filter-grid li {
+.custom-list li {
     list-style-type: none;
     list-style-position: inside;
 }
 
-.filter-features ul {
-    padding: 0;
+
+
+.checkbox {
+    /*< hide checkbox*/
+    text-indent: -9999px;
+    z-index: 12;
+    opacity: 0;
+    /*hide checkbox>*/
+
+    & + label::before {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        left: 9px;
+        background: url('../images/checkbox-sprite.png') no-repeat;
+        background-position: 0px -125px;
+    }
+
+    &:checked + label::before {
+        background-position: 0px -50px;
+    }
+
+    &:hover + label::before{
+    	background-position: -0px -100px;
+    }
+
+    &:checked + label:hover::before {
+        background-position: 0px -25px;
+    }
+    
+    &:checked:disabled + label::before {
+        background-position: 0px 0px;
+    }
+    
+    &[disabled] + label::before {
+        background-position: 0px -75px;
+    }
 }
 
-.filter-features li {
-    list-style-type: none;
-    list-style-position: inside;
+.radio {
+    /*< hide checkbox*/
+    text-indent: -9999px;
+    z-index: 12;
+    opacity: 0;
+    /*hide checkbox>*/
+
+    & + label::before {
+        position: absolute;
+        content: "";
+        width: 25px;
+        height: 25px;
+        left: 9px;
+        background: url('../images/radio-buttons.png') no-repeat;
+        background-position: 0px -25px;
+    }
+
+    &:checked + label::before {
+        background-position: -25px -50px;
+    }
+
+    &:hover + label::before{
+    	background-position: -25px 0px;
+    }
+
+    &:checked + label:hover::before {
+        background-position: 0px -50px;
+    }
+    
+    &:checked:disabled + label::before {
+        background-position: -25px -25px;
+    }
+    
+    &[disabled] + label::before {
+        background-position: 0px -0px;
+    }
+}
+
+.custom-list{
+    label {
+        padding-left: 20px;
+    }
+    .section-name {
+        background-color: white;
+        padding-left: 0;
+        font-weight: 700;
+        text-transform: none;
+        font-size: 17px;
+        line-height: 30px;
+    }
 }
