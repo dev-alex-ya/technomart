@@ -2,6 +2,13 @@
     text-align: right;
     padding: 0;
 
+    .private-links {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
     .list {
         list-style-type: none;
         padding: 0;
@@ -78,21 +85,41 @@
         content: url("../images/icons/logout-active.png");
     }
 
-    .auth-myorders {
+    .auth {
         color: #32425c;
         text-decoration: underline;
     }
 
-    .auth-cabinet {
-        color: #32425c;
-        text-decoration: underline;
+    .auth:hover {
+        color: #ee3643;
     }
 
+    .auth:active {
+        color: #b7bfc8;
+    }
+
+    .myorders {
+        
+    }
+
+    .cabinet {
+        // margin-left: 30px;
+    }
+
+    .box {
+        position: relative;
+        width: 30px;
+    }
     .circle {
-        width: 100px;
-        height: 100px;
-        background: red;
-        border-radius: 50%
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        left: calc(50% - 2px);
+        top: calc(50% - 2px);
+        background-color: #32425c;
+        // background-color: red;
+        border-radius: 50%;
+        z-index: 1000;
     }
 
     .nav-link {
