@@ -3,18 +3,49 @@
 .block-filter {
     padding: 0;
     border: 0;
+
+    .section-title {
+        margin-bottom: 20px;
+        background-color: white;
+        padding-left: 0;
+        font-weight: 700;
+        text-transform: none;
+        font-size: 17px;
+        line-height: 30px;
+    }
 }
 
+.slider-wraper {
+    background-color: #f1f1f1;
+    padding: 18px 29px;
+    margin-bottom: 10px;
+
+
+    .slider-range {
+
+
+    }
+}
+
+
+.filter {
+    //@include media-breakpoint-only(xs) { ... }
+    //@include media-breakpoint-only(sm) { ... }
+    @include media-breakpoint-only(md) {
+        display: flex;
+        flex-direction: column;
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
 
 .filter-section {
     margin-bottom: 50px;
 }
-
-.section-name {
-    margin-bottom: 20px;
-    // background-color: white;
-}
-
 
 // .filter-section li {
 //     margin-bottom: 20px;
@@ -66,13 +97,16 @@
     z-index: 12;
     opacity: 0;
     /*hide checkbox>*/
+    & + label {
+        position: relative;
+    }
 
     & + label::before {
         position: absolute;
         content: "";
         width: 25px;
         height: 25px;
-        left: 9px;
+        left: -10px;
         background: url('../images/checkbox-sprite.png') no-repeat;
         background-position: 0px -125px;
     }
@@ -104,13 +138,16 @@
     z-index: 12;
     opacity: 0;
     /*hide checkbox>*/
+    & + label {
+        position: relative;
+    }
 
     & + label::before {
         position: absolute;
         content: "";
         width: 25px;
         height: 25px;
-        left: 9px;
+        left: -10px;
         background: url('../images/radio-buttons.png') no-repeat;
         background-position: 0px -25px;
     }
@@ -140,12 +177,5 @@
     label {
         padding-left: 20px;
     }
-    .section-name {
-        background-color: white;
-        padding-left: 0;
-        font-weight: 700;
-        text-transform: none;
-        font-size: 17px;
-        line-height: 30px;
-    }
+
 }
