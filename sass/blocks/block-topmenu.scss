@@ -2,7 +2,8 @@
 
     background-color: var(--menucolor);
     margin-bottom: 60px;
-    
+
+
     .navbar-nav {
         padding: 0;
     }
@@ -12,7 +13,35 @@
         padding-top: 22px;
         padding-bottom: 21px;
     }
+
     .nav-item:hover {
         background-color: var(--basecolor);
+    }
+
+    .topmenu {
+
+        li {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .navbar-toggler {
+            display: none;
+        }
+
+        .topmenu-toggler {
+            display: none;
+        }
+
+        .topmenu {
+            flex-direction: row;
+
+            li {
+                width: inherit;
+            }
+        }
     }
 }
