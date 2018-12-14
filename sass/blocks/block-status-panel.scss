@@ -1,143 +1,1 @@
-.block-status-panel {
-    background-color: var(--basecolor);
-    padding: 0;
-    margin-bottom: -5px;
-
-    .search {
-        background-color: #293449;
-        color: #293449;
-        font-size: 17px;
-        line-height: 21px;
-        font-family: cuprumRegular, sans, sans-serif;
-        background-image: url("../images/icons/search.png");
-        background-repeat: no-repeat;
-        background-position: 18px 10px;
-        padding-left: 50px;
-        width: 250px;
-        border-radius: 0;
-    }
-
-    .search:hover {
-        background-color: #212a3a;
-        color: #293449;
-        background-image: url("../images/icons/search-hover.png");
-    }
-
-    .search:focus {
-        background-color: #ffffff;
-        color: #111111;
-        background-image: url("../images/icons/search-focus.png");
-    }
-
-    .nav-link {
-        display: flex;
-        justify-content: flex-end;
-        width: 150px;
-        padding-right: 5px;
-        // background-color: green;
-    }
-
-    .nav-link:hover {
-        color: #f0f1f2;
-        // background-color: red;
-    }
-
-    .nav-link:active {
-        color: #a2a5a9;
-        background-color: #161d29;
-    }
-
-    .bookmark {
-        position: relative;
-    }
-
-    .bookmark::before {
-        position: absolute;
-        content: url("../images/icons/bookmark.png");
-        width: 20px;
-        height: 17px;
-        left: 20px;
-        bottom: 12px;
-    }
-
-    .bookmark:hover::before {
-        content: url("../images/icons/bookmark-hover.png");
-    }
-
-    .bookmark:active::before {
-        content: url("../images/icons/bookmark-active.png");
-    }
-
-    //basket
-    .basket {
-        position: relative;
-    }
-
-    .basket::before {
-        position: absolute;
-        content: url("../images/icons/basket.png");
-        width: 20px;
-        height: 17px;
-        left: 30px;
-        bottom: 12px;
-    }
-
-    .basket:hover::before {
-        content: url("../images/icons/basket-hover.png");
-    }
-
-    .basket:active::before {
-        content: url("../images/icons/basket-active.png");
-    }
-
-    .checkout:hover {
-        color: #ffffff;
-        background-color: #5fbb2d;
-    }
-
-    .checkout:active {
-        color: #a4bf94;
-        background-color: #518534;
-    }
-}
-
-.navbar-brand {
-    position: relative;
-    background-color: #ee3643;
-    color: #ffffff;
-    font-size: 24px;
-    line-height: 24px;
-
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-top: 13px;
-    padding-bottom: 12px;
-    // border-bottom: 5px solid #b52933;
-    margin: 0;
-}
-
-.navbar-brand:hover {
-    background-color: #ca2c37;
-}
-
-.navbar-brand:active {
-    background-color: #ba2732;
-}
-
-.navbar-brand::after {    
-    width: 100%;
-    height: 5px;
-    left: 0px;
-    bottom: -5px;
-    content: "";
-    position: absolute;
-    background-color: #b52933;
-}
-
-.navbar-brand:hover::after {
-    background-color: #9a212a;
-}
-
-.navbar-brand:active::after {
-    background-color: #8e1e26;
-}
+.block-status-panel {    background-color: var(--basecolor);    padding: 0;    //margin-bottom: 45px;    .search {        background-color: #293449;        color: #293449;        font-size: 17px;        line-height: 21px;        font-family: cuprumRegular, sans, sans-serif;        background-image: url("../images/icons/search.png");        background-repeat: no-repeat;        background-position: 18px 10px;        padding-left: 50px;        width: 250px;        border-radius: 0;    }    .search:hover {        background-color: #212a3a;        color: #293449;        background-image: url("../images/icons/search-hover.png");    }    .search:focus {        background-color: #ffffff;        color: #111111;        background-image: url("../images/icons/search-focus.png");    }    .nav-link {        display: flex;        justify-content: flex-end;        width: 150px;        padding-right: 5px;        // background-color: green;    }    .nav-link:hover {        color: #f0f1f2;        // background-color: red;    }    .nav-link:active {        color: #a2a5a9;        background-color: #161d29;    }    .bookmark {        position: relative;    }    .bookmark::before {        position: absolute;        content: url("../images/icons/bookmark.png");        width: 20px;        height: 17px;        left: 20px;        bottom: 12px;    }    .bookmark:hover::before {        content: url("../images/icons/bookmark-hover.png");    }    .bookmark:active::before {        content: url("../images/icons/bookmark-active.png");    }    //basket    .basket {        position: relative;    }    .basket::before {        position: absolute;        content: url("../images/icons/basket.png");        width: 20px;        height: 17px;        left: 30px;        bottom: 12px;    }    .basket:hover::before {        content: url("../images/icons/basket-hover.png");    }    .basket:active::before {        content: url("../images/icons/basket-active.png");    }    .checkout:hover {        color: #ffffff;        background-color: #5fbb2d;    }    .checkout:active {        color: #a4bf94;        background-color: #518534;    }}.navbar-brand {    position: relative;    background-color: #ee3643;    color: #ffffff;    font-size: 24px;    line-height: 24px;    padding-left: 55px;    padding-right: 55px;    padding-top: 13px;    padding-bottom: 12px;    // border-bottom: 5px solid #b52933;    margin: 0;}.navbar-brand:hover {    background-color: #ca2c37;}.navbar-brand:active {    background-color: #ba2732;}.navbar-brand::after {        width: 100%;    height: 5px;    left: 0px;    bottom: -5px;    content: "";    position: absolute;    background-color: #b52933;}.navbar-brand:hover::after {    background-color: #9a212a;}.navbar-brand:active::after {    background-color: #8e1e26;}

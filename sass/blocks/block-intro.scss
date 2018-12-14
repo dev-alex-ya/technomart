@@ -1,52 +1,1 @@
-.block-intro {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-
-
-    .block-title  {
-        padding: 50px;
-
-        h1 {
-            color: red;
-            font-size: 16px;
-            line-height: 23px;
-            font-family: cuprumItalic , sans-serif;
-            font-weight: 400;
-        }
-    }
-    .intro-title {
-        padding: 50px;
-
-        h1 {
-            color: red;
-            font-size: 16px;
-            line-height: 23px;
-            font-family: cuprumItalic , sans-serif;
-            font-weight: 400;
-        }
-    }
-
-    .intro-body {
-
-    }
-
-    .phone {
-        position: relative;
-        padding-left: 50px;
-    }
-
-    .phone::before {
-        position: absolute;
-        content: url("../images/icons/phone.png");
-        width: 20px;
-        height: 17px;
-        left: 15px;
-    }
-
-
-
-    @include media-breakpoint-up(md) {
-        flex-direction: row !important;
-    }
-}
+.block-intro {    display: flex;    flex-direction: row !important;    justify-content: space-between !important;    padding-top: 45px;    margin-bottom: 30px;    .intro-title {        padding: 0 50px;        h1 {            color: red;            font-size: 16px;            line-height: 23px;            font-family: cuprumItalic , sans-serif;            font-weight: 400;        }    }    .intro-body {        display: flex;        align-items: flex-end;        justify-content: space-between;        flex-direction: column-reverse;        @include media-breakpoint-up(lg) {            flex-direction: row ;        }    }    .phone {        position: relative;        padding-left: 50px;    }    .phone::before {        position: absolute;        content: url("../images/icons/phone.png");        width: 20px;        height: 17px;        left: 15px;    }    @include media-breakpoint-up(md) {        flex-direction: column ;    }}

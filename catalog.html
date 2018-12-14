@@ -1,423 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <title>catalog.html</title>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="css/main.css">
-
-
-</head>
-<body>
-<nav class="block-status-panel  navbar navbar-expand-lg navbar-dark" id="block-status-panel">
-    <div class="container">
-        <div class="navbar-brand">Техномарт</div>
-        <form action="" class="form-inline my-2 my-lg-0">
-            <input style="border:none;outline:none;" type="text" class="search form-control mr-sm-2" placeholder="Поиск"
-                   area-label="Search">
-        </form>
-        <div class="navbar-header"></div>
-        <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link bookmark" href="#">Закладки: 0</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link basket" href="#">Корзина: 0</a>
-            </li>
-            <li class="nav-item  btn-success">
-                <a class="nav-link checkout" href="#">Оформить заказ</a>
-            </li>
-        </ul>
-    </div>
-</nav>
-
-<header class="header">
-    <div class="container">
-        <div class="block-intro">
-            <div class="intro-title col-md-4 border-green">
-                <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-            </div>
-            <div class="intro-body col-md-8 p-0 justify-content-between ">
-                <div class="block-contacts  border-red">
-                    <div class="phone">+38(044)555-05-55</div>
-                    <div class="address">г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)</div>
-                </div>
-                <div class="block-auth  border-green">
-                    <ul class="list">
-                        <li class="item">
-                            <a class="btn btn-auth nav-link loggedin" href="#">Инокентий Смоктуновский</a>
-                        </li>
-                        <li class="private-links">
-                            <a class="auth myorders" href="#">Мои заказы</a>
-                            <span class="box"><span class="circle"></span></span>
-                            <a class="auth cabinet" href="#">Личный кабинет</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <nav class="block-topmenu">
-            <nav class="navbar navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </nav>
-            <div class="collapse.show" id="navbarToggleExternalContent">
-                <ul class="navbar-nav justify-content-around navbar" id="topmenu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Компания</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="catalog.html">Каталог</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Новости</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Спецпредложения</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Доставка</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-</header>
-
-
-<main class="container">
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item home"><a href="#">Главная</a></li>
-            <li class="breadcrumb-item"><a href="#">Каталог</a></li>
-            <li class="breadcrumb-item"><a href="#">Инструмент</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Перфораторы</li>
-        </ol>
-    </nav>
-
-    <div class="main-title"><h2>Перфораторы</h2></div>
-    <div class="content row">
-        <div class="col-lg-3 col-md-12">
-            <div class="block-filter">
-                <div class="section-name">Фильтр</div>
-                <form class="filter" method="get" action="catalog.html">
-                    <div class="wrapper">
-                        <div class="filter-section filter-range clearfix">
-                            <div class="block-range">
-                                <label class="section-title">Цена:</label>
-                                <div class="slider-wraper">
-                                    <div id="slider-range"></div>
-                                </div>
-                                <div class="price-controls">
-                                    <label class="label-min">
-                                        от <input name="min-price" class="min-price" id="min-price" type="text"
-                                                  value="0">
-                                    </label>
-                                    <label class="label-max">
-                                        до <input name="max-price" class="max-price" id="max-price" type="text"
-                                                  value="35000">
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="custom-list">
-                            <p class="section-title">Производители:</p>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" name="checkbox" id="checkbox1" class="checkbox" checked>
-                                    <label for="checkbox1">Bosch</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="checkbox" id="checkbox2" class="checkbox">
-                                    <label for="checkbox2">Интерскол</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="checkbox" id="checkbox3" class="checkbox" checked
-                                           disabled>
-                                    <label for="checkbox3">Makita</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="checkbox" id="checkbox4" class="checkbox" checked
-                                           disabled>
-                                    <label for="checkbox4">Dewalt</label>
-                                </li>
-                                <li>
-                                    <input type="checkbox" name="checkbox" id="checkbox5" class="checkbox" checked
-                                           disabled>
-                                    <label for="checkbox5">Hitachi</label>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="custom-list radio-block">
-                            <p class="section-title">Питание:</p>
-                            <ul>
-                                <li>
-                                    <input type="radio" class="radio" name="power" id="radio1" checked>
-                                    <label for="radio1">Аккумуляторные</label>
-                                </li>
-                                <li>
-                                    <input type="radio" class="radio" name="power" id="radio2">
-                                    <label for="radio2">Сетевые</label>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <input class="btn red" type="submit" value="Показать">
-                </form>
-            </div>
-        </div>
-
-        <div class="col-md-12 col-lg-9">
-            <div class="block-catalog">
-                <div class="section-name">Сортировка</div>
-
-
-                <div class="row">
-
-                    <div class="card block-goods text-center">
-                        <img class="card-img-top" src="images/goods/goods0.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">25500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                    <div class="card block-goods text-center">
-                        <img class="card-img-top" src="images/goods/goods1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">15500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                    <div class="card block-goods text-center">
-                        <img class="card-img-top" src="images/goods/goods2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">25500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                    <div class="card block-goods text-center new">
-                        <img class="card-img-top" src="images/goods/goods3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">12500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                    <div class="card block-goods text-center">
-                        <img class="card-img-top" src="images/goods/goods0.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">25500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                    <div class="card block-goods text-center">
-                        <img class="card-img-top" src="images/goods/goods1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">15500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                    <div class="card block-goods text-center">
-                        <img class="card-img-top" src="images/goods/goods2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">25500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                    <div class="card block-goods text-center new">
-                        <img class="card-img-top" src="images/goods/goods3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">12500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-                    <div class="card block-goods text-center new">
-                        <img class="card-img-top" src="images/goods/goods3.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>
-                            <p class="card-text old-price">32500 грн.</p>
-                            <a href="#" class="btn btn-buy">12500 грн.</a>
-                        </div>
-                        <div class="interesting-goods">
-                            <button class="btn btn-success">Купить</button>
-                            <button class="btn btn-outline-success">В закладки</button>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <nav aria-label="...">
-                    <ul class="pagination">
-                        <li class="page-item d-none">
-                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                        </li>
-                        <li class="page-item active">
-                            <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">Next</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-</main>
-<div class="block-about-goods">
-    <div class="container">
-        <div class="title"><h2>Пара слов о перфораторах</h2></div>
-        <p>Перфоратор - универсальный строительные инструмент. Предназначен для сверления и долбления отверстий в
-            кирпиче, бетоне и камне. Существуют электрические и пневматические перфораторы. Современные модели могут
-            выполнять функци дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор
-            &#171трехрежимников&#187: в одном устройстве будут совмещены отбойный молоток ударная дрель.</p>
-    </div>
-</div>
-
-<footer>
-    <nav class="block-bottommenu navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <div class="navbar-brand">Техномарт</div>
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Компания</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Новости</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Каталог</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Доставка</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="block-bottommenu navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <div class="address">г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)</div>
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-yellow" href="#">Материалы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-yellow" href="#">Техника</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-yellow" href="#">Инструмент</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-yellow" href="#">Спецпредложения</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="block-social">
-        <div class="container">
-            <div class="copyright">2010-2017 Компания "Техномарт" Все права защищены</div>
-            <ul class="social-buttons nav navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link btn-social vk" href="vk.com"><img src="images/socials/vk.png"
-                                                                         alt="Ссылка на ВКонтакте"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-social fb" href="facebook.com"><img src="images/socials/fb.png"
-                                                                               alt="Ссылка на Фейсбук"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-social inst" href="instagram.com"><img src="images/socials/inst.png"
-                                                                                  alt="Ссылка на Инстаграм"></a>
-                </li>
-            </ul>
-            <ul class="feedback nav navbar-nav ml-auto">
-                <li class="nav-item">
-                    <div>Обратная связь</div>
-                    <div class="email text-yellow">mail@example.com</div>
-                </li>
-                <li class="nav-item">
-                    <div>Разработано</div>
-                    <div class="site text-yellow">example.com</div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</footer>
-
-<script src="js/jquery-3.3.1.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
-        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
-<script src="js/slide-range.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head>    <meta charset="UTF-8">    <title>catalog.html</title>    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    <link rel="stylesheet" href="css/main.css"></head><body>    <nav class="block-status-panel  navbar navbar-expand-lg navbar-dark" id="block-status-panel">        <div class="container">            <div class="navbar-brand">Техномарт</div>            <form action="" class="form-inline my-2 my-lg-0">                <input style="border:none;outline:none;" type="text" class="search form-control mr-sm-2" placeholder="Поиск"                       area-label="Search">            </form>            <div class="navbar-header"></div>            <ul class="nav navbar-nav ml-auto">                <li class="nav-item">                    <a class="nav-link bookmark" href="#">Закладки: 0</a>                </li>                <li class="nav-item">                    <a class="nav-link basket" href="#">Корзина: 0</a>                </li>                <li class="nav-item  btn-success">                    <a class="nav-link checkout" href="#">Оформить заказ</a>                </li>            </ul>        </div>    </nav>    <header class="header">        <div class="container">            <div class="block-intro">                <div class="intro-title col-md-4 border-green">                    <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>                </div>                <div class="intro-body col-md-8 p-0">                    <div class="block-contacts  border-red">                        <div class="phone">+38 (044) 555-05-55</div>                        <div class="address">г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)</div>                    </div>                    <div class="block-auth">                        <ul class="list">                            <li class="item">                                <a class="btn btn-auth nav-link loggedin" href="#">Инокентий Смоктуновский</a>                            </li>                            <li class="private-links">                                <a class="auth myorders" href="#">Мои заказы</a>                                <span class="box"><span class="circle"></span></span>                                <a class="auth cabinet" href="#">Личный кабинет</a>                            </li>                        </ul>                    </div>                </div>            </div>        </div>        <div class="container">            <nav class="block-topmenu">                <nav class="navbar navbar-dark">                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">                        <span class="navbar-toggler-icon"></span>                    </button>                </nav>                <div class="collapse.show" id="navbarToggleExternalContent">                    <ul class="navbar-nav justify-content-around navbar" id="topmenu">                        <li class="nav-item">                            <a class="nav-link" href="#">Главная</a>                        </li>                        <li class="nav-item">                            <a class="nav-link" href="#">Компания</a>                        </li>                        <li class="nav-item">                            <a class="nav-link" href="catalog.html">Каталог</a>                        </li>                        <li class="nav-item">                            <a class="nav-link" href="#">Новости</a>                        </li>                        <li class="nav-item">                            <a class="nav-link" href="#">Спецпредложения</a>                        </li>                        <li class="nav-item">                            <a class="nav-link" href="#">Доставка</a>                        </li>                        <li class="nav-item">                            <a class="nav-link" href="#">Контакты</a>                        </li>                    </ul>                </div>            </nav>        </div>    </header>    <main class="container">        <nav aria-label="breadcrumb">            <ol class="breadcrumb">                <li class="breadcrumb-item home"><a href="#">Главная</a></li>                <li class="breadcrumb-item"><a href="#">Каталог</a></li>                <li class="breadcrumb-item"><a href="#">Инструмент</a></li>                <li class="breadcrumb-item active" aria-current="page">Перфораторы</li>            </ol>        </nav>        <div class="main-title"><h2>Перфораторы</h2></div>        <div class="content row">            <div class="col-lg-3 col-md-12">                <div class="block-filter">                    <div class="section-name">Фильтр</div>                    <form class="filter" method="get" action="catalog.html">                        <div class="wrapper">                            <div class="filter-section filter-range clearfix">                                <div class="block-range">                                    <label class="section-title">Цена:</label>                                    <div class="slider-wraper">                                        <div id="slider-range"></div>                                    </div>                                    <div class="price-controls">                                        <label class="label-min">                                            от <input name="min-price" class="min-price" id="min-price" type="text"                                                      value="0">                                        </label>                                        <label class="label-max">                                            до <input name="max-price" class="max-price" id="max-price" type="text"                                                      value="35000">                                        </label>                                    </div>                                </div>                            </div>                            <div class="custom-list">                                <p class="section-title">Производители:</p>                                <ul>                                    <li>                                        <input type="checkbox" name="checkbox" id="checkbox1" class="checkbox" checked>                                        <label for="checkbox1">Bosch</label>                                    </li>                                    <li>                                        <input type="checkbox" name="checkbox" id="checkbox2" class="checkbox">                                        <label for="checkbox2">Интерскол</label>                                    </li>                                    <li>                                        <input type="checkbox" name="checkbox" id="checkbox3" class="checkbox" checked                                               disabled>                                        <label for="checkbox3">Makita</label>                                    </li>                                    <li>                                        <input type="checkbox" name="checkbox" id="checkbox4" class="checkbox" checked                                               disabled>                                        <label for="checkbox4">Dewalt</label>                                    </li>                                    <li>                                        <input type="checkbox" name="checkbox" id="checkbox5" class="checkbox" checked                                               disabled>                                        <label for="checkbox5">Hitachi</label>                                    </li>                                </ul>                            </div>                            <div class="custom-list radio-block">                                <p class="section-title">Питание:</p>                                <ul>                                    <li>                                        <input type="radio" class="radio" name="power" id="radio1" checked>                                        <label for="radio1">Аккумуляторные</label>                                    </li>                                    <li>                                        <input type="radio" class="radio" name="power" id="radio2">                                        <label for="radio2">Сетевые</label>                                    </li>                                </ul>                            </div>                        </div>                        <input class="btn red" type="submit" value="Показать">                    </form>                </div>            </div>            <div class="col-md-12 col-lg-9">                <div class="block-catalog">                    <div class="section-name">Сортировка</div>                    <div class="row">                        <div class="card block-goods text-center">                            <img class="card-img-top" src="images/goods/goods0.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">25500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center">                            <img class="card-img-top" src="images/goods/goods1.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">15500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center">                            <img class="card-img-top" src="images/goods/goods2.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">25500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center new">                            <img class="card-img-top" src="images/goods/goods3.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">12500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center">                            <img class="card-img-top" src="images/goods/goods0.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">25500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center">                            <img class="card-img-top" src="images/goods/goods1.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">15500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center">                            <img class="card-img-top" src="images/goods/goods2.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">25500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center new">                            <img class="card-img-top" src="images/goods/goods3.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">12500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                        <div class="card block-goods text-center new">                            <img class="card-img-top" src="images/goods/goods3.jpg" alt="Card image cap">                            <div class="card-body">                                <h5 class="card-title">Перфоратор BOSCH BFG 9000</h5>                                <p class="card-text old-price">32500 грн.</p>                                <a href="#" class="btn btn-buy">12500 грн.</a>                            </div>                            <div class="interesting-goods">                                <button class="btn btn-success">Купить</button>                                <button class="btn btn-outline-success">В закладки</button>                            </div>                        </div>                    </div>                    <nav aria-label="...">                        <ul class="pagination">                            <li class="page-item d-none">                                <a class="page-link" href="#" tabindex="-1">Previous</a>                            </li>                            <li class="page-item active">                                <a class="page-link" href="#">1</a>                            </li>                            <li class="page-item">                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>                            </li>                            <li class="page-item">                                <a class="page-link" href="#">3</a>                            </li>                            <li class="page-item">                                <a class="page-link" href="#">Next</a>                            </li>                        </ul>                    </nav>                </div>            </div>        </div>    </main>    <div class="block-about-goods">        <div class="container">            <div class="title"><h2>Пара слов о перфораторах</h2></div>            <p>Перфоратор - универсальный строительные инструмент. Предназначен для сверления и долбления отверстий в                кирпиче, бетоне и камне. Существуют электрические и пневматические перфораторы. Современные модели могут                выполнять функци дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор                &#171трехрежимников&#187: в одном устройстве будут совмещены отбойный молоток ударная дрель.</p>        </div>    </div>    <footer>        <nav class="block-bottommenu navbar navbar-expand-lg navbar-dark">            <div class="container">                <div class="navbar-brand">Техномарт</div>                <ul class="nav navbar-nav ml-auto">                    <li class="nav-item">                        <a class="nav-link" href="#">Компания</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="#">Новости</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="#">Каталог</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="#">Доставка</a>                    </li>                    <li class="nav-item">                        <a class="nav-link" href="#">Контакты</a>                    </li>                </ul>            </div>        </nav>        <nav class="block-bottommenu navbar navbar-expand-lg navbar-dark">            <div class="container">                <div class="address">г.Киев, ул.В.Гетьмана, Д.6, (2-й этаж)</div>                <ul class="nav navbar-nav ml-auto">                    <li class="nav-item">                        <a class="nav-link text-yellow" href="#">Материалы</a>                    </li>                    <li class="nav-item">                        <a class="nav-link text-yellow" href="#">Техника</a>                    </li>                    <li class="nav-item">                        <a class="nav-link text-yellow" href="#">Инструмент</a>                    </li>                    <li class="nav-item">                        <a class="nav-link text-yellow" href="#">Спецпредложения</a>                    </li>                </ul>            </div>        </nav>        <nav class="block-social">            <div class="container">                <div class="copyright">2010-2017 Компания "Техномарт" Все права защищены</div>                <ul class="social-buttons nav navbar-nav ml-auto">                    <li class="nav-item">                        <a class="nav-link btn-social vk" href="vk.com"><img src="images/socials/vk.png"                                                                             alt="Ссылка на ВКонтакте"></a>                    </li>                    <li class="nav-item">                        <a class="nav-link btn-social fb" href="facebook.com"><img src="images/socials/fb.png"                                                                                   alt="Ссылка на Фейсбук"></a>                    </li>                    <li class="nav-item">                        <a class="nav-link btn-social inst" href="instagram.com"><img src="images/socials/inst.png"                                                                                      alt="Ссылка на Инстаграм"></a>                    </li>                </ul>                <ul class="feedback nav navbar-nav ml-auto">                    <li class="nav-item">                        <div>Обратная связь</div>                        <div class="email text-yellow">mail@example.com</div>                    </li>                    <li class="nav-item">                        <div>Разработано</div>                        <div class="site text-yellow">example.com</div>                    </li>                </ul>            </div>        </nav>    </footer>    <script src="js/jquery-3.3.1.js"></script>    <script src="js/popper.js"></script>    <script src="js/bootstrap.js"></script>    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"            integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>    <script src="js/slide-range.js"></script></body></html>

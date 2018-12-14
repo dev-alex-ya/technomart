@@ -1,20 +1,23 @@
 .block-contacts {
     padding: 0 !important;
+    font-family: cuprumRegular, sans, sans-serif;
 
     .phone {
         border: 3px solid #fff;
         font-size: 18px;
         line-height: 19px;
         color: #e9292a;
-        padding: 8pt;
+        padding: 8px;
         padding-right: 70px;
         padding-left: 70px;
+        width: 270px;
     }
-    
+
     .address {
         color: #32425c;
         padding: 5px 0 0 10px;
-        font-size: 10pt;
-        line-height: 24pt;
+        font-size: 14px;
+        line-height: 24px;
+        width: 270px;
     }
 }

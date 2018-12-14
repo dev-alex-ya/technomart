@@ -1,12 +1,13 @@
 .block-auth {
-    text-align: right;
+    display: flex;
+    flex-direction: row ;
     padding: 0;
 
     .private-links {
         position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        //justify-content: flex-end;
     }
 
     .list {
@@ -16,9 +17,8 @@
     }
 
     .item {
-        margin-left: 10px;
+        //margin-left: 10px;
         display: inline-block;
-        
     }
     
     .btn-auth {
@@ -133,5 +133,9 @@
 
     .nav-link:active {
         color: #cacaca;
+    }
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row ;
     }
 }
