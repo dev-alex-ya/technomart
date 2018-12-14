@@ -1,4 +1,35 @@
 .block-intro {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+
+    .block-title  {
+        padding: 50px;
+
+        h1 {
+            color: red;
+            font-size: 16px;
+            line-height: 23px;
+            font-family: cuprumItalic , sans-serif;
+            font-weight: 400;
+        }
+    }
+    .intro-title {
+        padding: 50px;
+
+        h1 {
+            color: red;
+            font-size: 16px;
+            line-height: 23px;
+            font-family: cuprumItalic , sans-serif;
+            font-weight: 400;
+        }
+    }
+
+    .intro-body {
+
+    }
 
     .phone {
         position: relative;
@@ -11,5 +42,11 @@
         width: 20px;
         height: 17px;
         left: 15px;
+    }
+
+
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row !important;
     }
 }
