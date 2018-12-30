@@ -1,0 +1,51 @@
+.block-services
+    .container
+        .promo-intro
+            .promo-title
+                | Сервисы
+            .promo-body
+                | Хороший интернет-магазин отличается от плохого не только ценами!
+                | Мы стараемся изо всех сил, чтобы сделать выши покупки приятными.
+        .block-list.row.justify-content-between
+            #v-pills-tab.nav.flex-column.nav-pills(role='tablist', aria-orientation='vertical')
+                .nav.flex-column.nav-pills
+                    a#v-pills-home-tab.nav-link.active(data-toggle='pill', href='#delivery', role='tab', aria-controls='v-pills-home', aria-selected='true')
+                        | Доставка
+                    a#v-pills-profile-tab.nav-link(data-toggle='pill', href='#warranty', role='tab', aria-controls='v-pills-profile', aria-selected='false')
+                        | Гарантия
+                    a#v-pills-messages-tab.nav-link(data-toggle='pill', href='#credit', role='tab', aria-controls='v-pills-messages', aria-selected='false')
+                        | Кредит
+            #v-pills-tabContent.col-md-8.tab-content
+                #delivery.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='v-pills-home-tab')
+                    .d-flex.position-relative.justify-content-start
+                        .promo-text
+                            .promo
+                                | Доставка
+                            .promo-body
+                                | Мы с удовольствием доставим ваш товар прямо
+                                | к вашему подъезду совершенно бесплатно!
+                                | Ведь мы неплохо зарабатываем,
+                                | поднимая его на ваш этаж!
+                        img#promo-delivery(src='images/promo/delivery.png', alt='Картина быстрой доставки', style='z-index:1;')
+                        img#promo-delivery-shadow.position-absolute(src='images/promo/delivery-shadow.png', alt='Картина быстрой доставки', style='z-index:0;')
+                #warranty.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-profile-tab')
+                    .d-flex
+                        .promo
+                            .promo-title
+                                | Гарантия
+                            .promo-body
+                                | Если купленный у нас товар поломается или заискрит,
+                                | а также в случае пожара, спровоцированного его возгаранием,
+                                | вы всегда можете быть уверены в нашей гарантии.
+                                | Мы обменяем сгоревший товар на новый.
+                                | Дом уж восстановите как-нибудь сами.
+                        img#promo-warranty(src='images/promo/warranty.png', alt='Картина надежной гарантии')
+                #credit.tab-pane.fade(role='tabpanel', aria-labelledby='v-pills-messages-tab')
+                    .d-flex
+                        .promo
+                            .promo-title
+                                | Кредит
+                            .promo-body
+                                | Залезть в долговую яму стало проще!
+                                | Кредитные консультанты придут вам на помощь.
+                        img#promo-credit(src='images/promo/credit.png', alt='Картина приятного кредита')

@@ -1,0 +1,16 @@
+extend layout/base.pug
+
+block title
+    | index.html
+
+block auth
+    include ./modules/auth-loged-out.pug
+
+block main
+    main.container
+        include ./modules/block-category.pug
+        include ./modules/block-popular-goods.pug
+        include ./modules/block-popular-vendors.pug
+    include ./modules/block-services.pug
+    .container
+        include ./modules/block-about.pug

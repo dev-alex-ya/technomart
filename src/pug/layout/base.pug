@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru-RU")
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet", href="css/main.css")
+        title
+            block title
+
+    body
+        include ../modules/block-status-panel
+
+        header.header
+            div.container
+                include ../modules/block-intro
+            div.container
+                include ../modules/block-topmenu
+
+        block main
+        
+        footer
+            include ../modules/block-bottommenu.pug
+            include ../modules/block-bottommenu2.pug
+            include ../modules/block-social.pug
+
+        script(src="js/jquery-3.3.1.js")
+        script(src="js/popper.js")
+        script(src="js/bootstrap.js")
+        block jquery-ui

@@ -1,0 +1,11 @@
+
+mixin breadcrumb(crumbs)
+    nav(aria-label="breadcrumb")
+        ol.breadcrumb
+            each crumb, index in crumbs
+                if index === 0
+                    li.breadcrumb-item(class="home"): a(href="#") #{crumb}
+                else if index+1 === crumbs.lenght
+                    li.breadcrumb-item(class="active"): a(href="#") #{crumb}
+                else
+                    li.breadcrumb-item: a(href="#") #{crumb}

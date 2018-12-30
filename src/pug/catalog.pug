@@ -1,0 +1,27 @@
+extend layout/base.pug
+include ./modules/mixines.pug
+
+block title
+    | catalog.html
+
+block auth
+    include ./modules/auth-loged-in.pug
+
+block main
+    main.container
+        +breadcrumb(["Главная", "Каталог", "Инструмент", "Перфораторы"])
+        .main-title
+            h2 Перфораторы
+        .content.row
+            .col-lg-3.col-md-12
+                include ./modules/block-filter.pug
+            .col-md-12.col-lg-9
+                include ./modules/block-catalog.pug
+
+    include ./modules/block-about-goods.pug
+    include ./modules/block-bottommenu.pug
+    include ./modules/block-bottommenu2.pug
+
+block jquery-ui
+    script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" crossorigin="anonymous" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=")
+    script(src="js/slide-range.js")

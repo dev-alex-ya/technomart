@@ -1,0 +1,44 @@
+.block-filter
+    .section-name Фильтр
+    form.filter(method='get', action='catalog.html')
+        .wrapper
+            .filter-section.filter-range.clearfix
+                .block-range
+                    label.section-title Цена:
+                    .slider-wraper
+                        #slider-range
+                    .price-controls
+                        label.label-min
+                            | от 
+                            input#min-price.min-price(name='min-price', type='text', value='0')
+                        label.label-max
+                            | до 
+                            input#max-price.max-price(name='max-price', type='text', value='35000')
+            .custom-list
+                p.section-title Производители:
+                ul
+                    li
+                        input#checkbox1.checkbox(type='checkbox', name='checkbox', checked='')
+                        label(for='checkbox1') Bosch
+                    li
+                        input#checkbox2.checkbox(type='checkbox', name='checkbox')
+                        label(for='checkbox2') Интерскол
+                    li
+                        input#checkbox3.checkbox(type='checkbox', name='checkbox', checked='', disabled='')
+                        label(for='checkbox3') Makita
+                    li
+                        input#checkbox4.checkbox(type='checkbox', name='checkbox', checked='', disabled='')
+                        label(for='checkbox4') Dewalt
+                    li
+                        input#checkbox5.checkbox(type='checkbox', name='checkbox', checked='', disabled='')
+                        label(for='checkbox5') Hitachi
+            .custom-list.radio-block
+                p.section-title Питание:
+                ul
+                    li
+                        input#radio1.radio(type='radio', name='power', checked='')
+                        label(for='radio1') Аккумуляторные
+                    li
+                        input#radio2.radio(type='radio', name='power')
+                        label(for='radio2') Сетевые
+        input.btn.red(type='submit', value='Показать')
