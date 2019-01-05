@@ -40,5 +40,5 @@ gulp.task("serve", ["pug", "sass"], function(){
     });
 
     gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-    gulp.watch("*.html", server.reload);
+    gulp.watch("src/pug/*", server.reload);
 });
